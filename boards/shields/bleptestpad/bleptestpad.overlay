@@ -6,8 +6,11 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-//#include "adept-layout.dtsi"
+#include "bleptestpad-layout.dtsi"
 
+&bleptestpad_layout {
+    transform = <&default_transform>;
+};
 
 / {
     chosen {
