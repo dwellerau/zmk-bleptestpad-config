@@ -1,0 +1,9 @@
+if SHIELD_BLEPTESTPAD
+
+config ZMK_KEYBOARD_NAME
+    default "bleptestpad"
+
+endif
+
+config SPI
+	default y

@@ -1,0 +1,9 @@
+file_format: "1"
+id: bleptestpad
+name: bleptestpad
+type: shield
+url: https://github.com/arunsenau/zmk-bleptestpad-config
+requires: [xiao_ble]
+features:
+  - keys
+  - pointer
