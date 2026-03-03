@@ -9,6 +9,28 @@
 //#include "adept-layout.dtsi"
 
 
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-direct";
+        wakeup-source;
+        input-gpios
+            = <&xiao_d 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            ;
+    };
+
+    default_transform: keymap_transform_0 {
+        compatible = "zmk,matrix-transform";
+        rows = <2>;
+        columns = <4>;
+        map = <
+            RC(0,0) 
+        >;
+    };
+};
 
 &pinctrl {
     spi0_default: spi0_default {
